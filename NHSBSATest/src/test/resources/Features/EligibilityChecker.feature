@@ -7,3 +7,4 @@ Scenario: Verify a person from Wales is able to check the NHS facility using Eli
 	When I put my circumstances into the Checker tool
 	
 	Then I should get a result of whether I will get help or not
+		

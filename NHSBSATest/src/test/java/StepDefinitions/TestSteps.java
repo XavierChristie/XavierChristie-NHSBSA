@@ -80,7 +80,10 @@ public class TestSteps{
 		EligibilityCheckerPage eligiblitycheckPage = new EligibilityCheckerPage(driver);
 		System.out.println("Then");
 		eligiblitycheckPage.Verify_YouGetFree_text();
-		
+		eligiblitycheckPage.Verify_How_to_get_your_help_text();
+		eligiblitycheckPage.Verify_NHS_Prescription_text();
+		eligiblitycheckPage.Verify_Entitlement_Card_text();
+	
 		driver.quit();
 		System.out.println("execution completed");
 	   
