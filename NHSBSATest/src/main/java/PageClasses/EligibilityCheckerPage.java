@@ -114,9 +114,10 @@ public class EligibilityCheckerPage extends Methods{
 	}
 	
 	
-	public void Verify_YouGetFree_text() throws InterruptedException {
+	public void Verify_YouGetFree_text(String Text) throws InterruptedException {
 		Thread.sleep(1000);
-		Verify_Webelement_Displayed(driver,You_get_free_Text);
+		Verify_Text( driver, You_get_free_Text,Text);
+		//Verify_Webelement_Displayed(driver,You_get_free_Text);
 		//driver.findElement(By.xpath(You_get_free_Text)).isDisplayed();
 		
 	}
@@ -221,6 +222,13 @@ public class EligibilityCheckerPage extends Methods{
 	public void Verify_Entitlement_Card_text() throws InterruptedException {
 		Thread.sleep(1000);
 		Verify_Webelement_Enabled(driver,Entitlement_Card_Text);
+		//driver.findElement(By.xpath(Apply_for_further_help_Text)).isEnabled();
+		
+	}
+	
+	public void Verify_PageTitle(String Title) throws InterruptedException {
+		Thread.sleep(1000);
+		Verify_CurrentPageTitle(driver,Title);
 		//driver.findElement(By.xpath(Apply_for_further_help_Text)).isEnabled();
 		
 	}
